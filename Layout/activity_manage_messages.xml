@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back"
+    tools:context="com.example.i170212_i170321.manage_messages"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageView
+                android:layout_marginLeft="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:src="@drawable/menu"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/menu"/>
+
+            <TextView
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="BistroChat"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#006400"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/chatlogo2"
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/search_bar"
+                android:background="@drawable/round_corners"
+                android:layout_marginHorizontal="15sp"
+                android:elevation="20sp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    android:padding="10sp"
+                    android:src="@drawable/search"
+                    android:id="@+id/searchIcon"
+                    android:background="@android:color/white"
+
+                    />
+
+                <EditText
+                    android:layout_toRightOf="@+id/searchIcon"
+                    android:id="@+id/search"
+                    android:layout_width="300sp"
+                    android:layout_height="50sp"
+                    android:paddingLeft="10sp"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:completionThreshold="2"
+                    android:backgroundTint="@android:color/white"
+                    android:background="@drawable/round_corners"
+                    android:hint="Search...." />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70sp"
+                    android:layout_height="50sp"
+                    android:id="@+id/profile"
+                    android:layout_toRightOf="@+id/search"
+                    android:background="@drawable/round_person"
+                    android:src="@drawable/user"/>
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20sp"
+                android:layout_marginHorizontal="5sp"
+                android:id="@+id/messages_rv"
+                android:layout_below="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

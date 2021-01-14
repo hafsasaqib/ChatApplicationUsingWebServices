@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.i170212_i170321.createProfile">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:elevation="10sp"
+        android:id="@+id/header"
+        android:background="@drawable/below_line"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Profile"
+            android:paddingLeft="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/photo"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_below="@+id/bioField"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_green"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20sp"
+            android:id="@+id/save"
+            android:textColor="#FFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/NameField"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5sp"
+            android:textSize="22dp"
+            android:textColor="	#000000"
+            android:textStyle="bold"
+            android:id="@+id/dob" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dob"
+            android:hint="     DD/MM/YY"
+            android:layout_marginHorizontal="30dp"
+            android:background= "@drawable/round_message"
+            android:id="@+id/dobField" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dobField"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5sp"
+            android:text="Gender"
+            android:layout_marginLeft="30dp"
+            android:textSize="22dp"
+            android:textColor="	#000000"
+            android:textStyle="bold"
+            android:id="@+id/gender" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/gender"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/genderField"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/round_button"
+                android:textColor="#33cc33"
+                android:textStyle="bold"
+                android:id="@+id/male"
+                android:text="Male"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:background="@drawable/round_button"
+                android:textColor="#33cc33"
+                android:textStyle="bold"
+                android:id="@+id/female"
+                android:text="Female"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/round_button"
+                android:textColor="#33cc33"
+                android:textStyle="bold"
+                android:id="@+id/notInterested"
+                android:text="Prefer Not to Say"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/genderField"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginLeft="30dp"
+            android:textSize="22dp"
+            android:textColor="	#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/phno" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/phno"
+            android:hint="     03001231231"
+            android:layout_marginHorizontal="30dp"
+            android:background= "@drawable/round_message"
+            android:id="@+id/phnoField" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phnoField"
+            android:layout_marginTop="20dp"
+            android:text="Bio"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="30dp"
+            android:textSize="22dp"
+            android:textColor="	#000000"
+            android:textStyle="bold"
+            android:id="@+id/textViewBio" />
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="     Tell more about yourself"
+            android:layout_below="@+id/textViewBio"
+            android:layout_marginHorizontal="30dp"
+            android:background= "@drawable/round_message"
+            android:id="@+id/bioField" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10sp"
+            android:textSize="22dp"
+            android:textColor="	#000000"
+            android:textStyle="bold"
+            android:id="@+id/name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:weightSum="2"
+            android:id="@+id/NameField"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="    First Name"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background= "@drawable/round_message"
+                android:id="@+id/FirstName" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="    Last Name"
+                android:layout_weight="1"
+                android:background= "@drawable/round_message"
+                android:id="@+id/LastName" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/photo"
+        android:layout_below="@+id/header"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_person"
+            android:src="@drawable/user"
+            android:padding="20dp"
+            tools:ignore="MissingClass" />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_marginTop="50sp"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:padding="8sp"
+            android:id="@+id/select_image"
+            android:src="@drawable/ic_outline_camera_alt_24"
+            android:background="@drawable/round_camera"/>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

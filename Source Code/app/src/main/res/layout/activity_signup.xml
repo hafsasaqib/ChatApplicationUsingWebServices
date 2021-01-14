@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.i170212_i170321.signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:src="@drawable/chatlogo2">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:paddingLeft="20sp"
+            android:drawableLeft="@drawable/ic_user_profile"
+            android:hint="  Email address"
+            android:textColor="#FFFF"
+            android:background="@drawable/r_light_green_white_border"
+            android:textColorHint="#FFFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </EditText>
+
+        <EditText
+            android:id="@+id/cpassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30sp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_door_key"
+            android:hint="  Create password"
+            android:textColorHint="#FFFF"
+            android:background="@drawable/r_light_green_white_border"
+            android:textColor="#FFFF"
+            android:paddingLeft="20sp"
+            android:textSize="20dp"
+            android:drawableRight="@drawable/eye"
+            android:paddingRight="10sp"
+            android:textStyle="bold">
+        </EditText>
+
+        <EditText
+            android:id="@+id/cpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30sp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/r_light_green_white_border"
+            android:paddingLeft="20sp"
+            android:drawableRight="@drawable/eye"
+            android:paddingRight="10sp"
+            android:drawableLeft="@drawable/ic_door_key"
+            android:hint="  Confirm password"
+            android:textColorHint="#FFFF"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="50sp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_below="@+id/messageField"
+            android:background="@drawable/round_white_border"
+            android:backgroundTint="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/Register"
+            android:textStyle="bold"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:text="By tapping 'Register' I agree to privacy policy and
+                                                                                         terms of condition"
+            android:textSize="10dp"
+            android:buttonTint="#FFFF"
+            android:textColor="#FFFF" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </LinearLayout>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+
+        android:layout_below="@+id/details">
+        <TableRow
+            android:layout_marginLeft="40sp"
+            >
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:text="Already have account?"
+                android:textSize="20dp"
+                android:buttonTint="#FFFF"
+                android:textColor="#FFFF" />
+            <Button
+                android:layout_height="match_parent"
+                android:id="@+id/signin_here"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Sign in Here"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:buttonTint="#FFFF"
+                android:textColor="#FFFF" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
