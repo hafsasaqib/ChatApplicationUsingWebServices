@@ -1,4 +1,4 @@
-# ChatApplicationUsingWebServices
+# Chat Application Using WebServices
 
 In this Project, I have created a Chat application using WebServices. The application contain the
 following things: 
